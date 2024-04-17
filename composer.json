@@ -3,7 +3,7 @@
         "psr-4": {
             
             "OurAutoLoadPlugin\\Src\\" : "src/",
-            "OurAutoLoadPlugin\\Inc\\ ": "inc/"
+            "OurAutoLoadPlugin\\Inc\\" : "inc/"
 
             }
         }

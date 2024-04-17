@@ -1,5 +1,6 @@
 <?php
 
+
 namespace OurAutoLoadPlugin\Inc;
 
 class Hi {
@@ -7,12 +8,17 @@ class Hi {
 
     public function __construct($name) {
         $this->name = $name;
-        add_action('init', [ $this, 'hi']);
-    }
-    public function hi() {
-        echo "Hi" . $this->name;
-    }
 
-}     
+        add_action('init', [ $this, 'hello'] );
+    }
+    
+    public function hello() {
+        printf("<p>%s</p>", "I am from {$this->name}");
+    }
+      
+    
+    
+
+}   
 
  

@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'OurAutoLoadPlugin\\Src\\' => array($baseDir . '/src'),
-    'OurAutoLoadPlugin\\Inc\\ ' => array($baseDir . '/inc'),
+    'OurAutoLoadPlugin\\Inc\\' => array($baseDir . '/inc'),
 );

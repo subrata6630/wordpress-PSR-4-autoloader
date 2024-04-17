@@ -2,16 +2,23 @@
 
 namespace OurAutoLoadPlugin\Src;
 
+/**
+ * 
+ */
+
 class Hello {
     public  $name;
 
     public function __construct($name) {
         $this->name = $name;
-        add_action('init', [ $this, 'hello']);
+
+        add_action('init', [ $this, 'hello'] );
     }
+
     public function hello() {
-        echo "Hello" . $this->name;
+        printf("<p>%s</p>", "I am from {$this->name}");
     }
+    
 
 }     
 
